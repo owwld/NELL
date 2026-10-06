@@ -1,0 +1,396 @@
+/* Importar fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-body: #1d2625;
+    --bg-header: #181c1b;
+    --bg-card: #1c1a1b;
+    --accent-color: #55c79e;
+    --text-main: #ffffff;
+    --text-secondary: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: var(--bg-header);
+    display: flex;
+    /* Al quitar el icono, el logo se mantendrá a la izquierda */
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.header-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.dot {
+    color: var(--accent-color);
+}
+
+/* ----- HERO SECTION ----- */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a2221;
+    border-bottom: 2px solid #161d1c;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* ----- MAIN CONTENT ----- */
+main {
+    display: flex;
+    flex: 1;
+    padding: 40px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Panel - Large Logo */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-logo {
+    text-align: left;
+}
+
+.large-logo h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.sub-logo {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Right Panel - Login Card */
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: var(--bg-card);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #555;
+    color: var(--text-main);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition: opacity 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.new-user-section h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-student {
+    background-color: var(--accent-color);
+    color: #000;
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.btn-landlord {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   ESTILOS Estudiantes Inicio
+   ========================================= */
+
+/* Menú superior adaptado */
+#menuPrincipal {
+    background-color: #181c1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
+}
+
+.opcionMenuPrincipal {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.opcionMenuPrincipal.activo {
+    color: #55c79e;
+}
+
+/* Buscador en fila */
+.seccion-buscador {
+    padding: 30px 40px;
+}
+
+.seccion-buscador h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.formulario-busqueda {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.campo.largo {
+    width: 250px;
+}
+
+.campo label {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    margin-bottom: 5px;
+}
+
+.campo input, 
+.campo select {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.btn-buscar {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+}
+
+/* Contenedor de las 5 tarjetas en fila exacta */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 15px;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    background-color: #1f2625;
+    border-radius: 8px;
+    width: 19%; /* Divide el espacio exacto para 5 tarjetas */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-casa {
+    height: 140px;
+    position: relative;
+}
+
+/* Configuración para que tus fotos cubran perfectamente el espacio */
+.imagen-casa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.etiqueta-precio {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #55c79e;
+    color: #000000;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.info-tarjeta {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info-tarjeta h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.info-tarjeta p {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.etiquetas-servicios {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.etiquetas-servicios span {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-detalles {
+    margin-top: auto; /* Manda el botón siempre al fondo de la tarjeta */
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #cccccc;
+    border: 1px solid #555;
+    padding: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.btn-detalles:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
