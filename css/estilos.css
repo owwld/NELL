@@ -442,3 +442,298 @@ body {
     color: #000000;
     background-color: #ffffff;
 }
+
+/* ==========================================
+   ESTILOS: DETALLES DE VIVIENDA
+   ========================================== */
+
+/* Navbar específica para esta vista */
+header.navbar {
+    justify-content: space-between;
+}
+
+header.navbar .header-logo {
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-main);
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent-color);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* Layout principal */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10%;
+    gap: 20px;
+}
+
+.top-nav-bar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: var(--accent-color);
+}
+
+/* Grid de dos columnas */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Diseño base de las tarjetas */
+.card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Galería */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+}
+
+.thumb-box {
+    flex: 1;
+    height: 80px;
+    background-color: #262425;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.thumb-box:hover {
+    opacity: 0.8;
+}
+
+/* Tarjeta de Resumen (Derecha superior) */
+.property-summary-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.property-summary-card .location {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.deposit-info {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-primary-action, .btn-secondary-action {
+    padding: 12px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary-action {
+    background-color: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-main);
+}
+
+.btn-primary-action:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+}
+
+.btn-secondary-action {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: var(--text-secondary);
+}
+
+.btn-secondary-action:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-main);
+}
+
+/* Tarjeta de Descripción (Izquierda inferior) */
+.description-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.description-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.description-card h4 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pill {
+    background-color: #2b292a;
+    color: var(--text-main);
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.btn-reviews {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    padding: 8px 15px;
+    border: 1px solid #444;
+    border-radius: 15px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-reviews:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Tarjeta de Arrendador (Derecha inferior) */
+.landlord-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.landlord-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.landlord-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #111;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.landlord-info h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.member-badge {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+}
+
+.contact-details p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+/* Responsividad */
+@media (max-width: 850px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}

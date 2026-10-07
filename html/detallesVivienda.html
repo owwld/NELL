@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Vivienda - NELL</title>
+    <!-- Enlace al archivo CSS existente -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado con navegación superior -->
+    <header class="navbar">
+        <a href="inicioEstudiante.html" class="header-logo">NELL<span class="dot">.</span></a>
+        
+        <nav class="nav-links">
+            <a href="inicioEstudiante.html" class="active">Inicio</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="historial.html">Historial</a>
+        </nav>
+
+        <!-- Avatar del usuario logueado -->
+        <a href="perfil.html" class="user-avatar" title="Ir a mi perfil">CM</a>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="details-container">
+
+        <!-- Botón para regresar -->
+        <div class="top-nav-bar">
+            <a href="inicioEstudiante.html" class="back-link">&lt; Detalles de tu nuevo hogar</a>
+        </div>
+
+        <!-- Grid Principal de la pantalla -->
+        <div class="details-grid">
+
+            <!-- 1. Columna Izquierda Superior: Galería de imágenes -->
+            <div class="gallery-section">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Casa moderna privada">
+                </div>
+                <div class="thumbnails">
+                    <div class="thumb-box">📷</div>
+                    <div class="thumb-box">📷</div>
+                    <div class="thumb-box">📷</div>
+                </div>
+            </div>
+
+            <!-- 2. Columna Derecha Superior: Información de la casa y acciones -->
+            <div class="card property-summary-card">
+                <h2>Casa moderna privada</h2>
+                <p class="location">📍 Col. Universidad</p>
+                <div class="price-tag">$10,000</div>
+                <p class="deposit-info">Depósito $4,500 - Universidad Tecnológica de León</p>
+
+                <div class="action-buttons">
+                    <a href="solicitud.html" class="btn-primary-action">Solicitar renta</a>
+                    <a href="contacto.html" class="btn-secondary-action">Contactar con el arrendador</a>
+                </div>
+            </div>
+
+            <!-- 3. Columna Izquierda Inferior: Descripción y Amenidades -->
+            <div class="card description-card">
+                <h3>Descripción</h3>
+                <p>Amplia casa en zona exclusiva de León a 10 minutos de la Universidad de León UTL. 5 cuartos individuales, cocina equipada y 2 cajones de estacionamiento. Ideal para un grupo grande de universitarios.</p>
+
+                <h4>Amenidades</h4>
+                <div class="amenities-grid">
+                    <span class="pill">Amueblado</span>
+                    <span class="pill">WiFi</span>
+                    <span class="pill">Parking</span>
+                    <span class="pill">Mascotas</span>
+                    <span class="pill">A/C</span>
+                    <span class="pill">5 Habitaciones</span>
+                </div>
+
+                <a href="reseñas.html" class="btn-reviews">Ver reseñas</a>
+            </div>
+
+            <!-- 4. Columna Derecha Inferior: Información del Arrendador -->
+            <div class="card landlord-card">
+                <h3>Información del arrendador</h3>
+                <div class="landlord-profile">
+                    <div class="landlord-avatar">MC</div>
+                    <div class="landlord-info">
+                        <h4>Miguel Carpio</h4>
+                        <span class="member-badge">Miembro desde 2022</span>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <p>📞 477 845 990</p>
+                    <p>✉️ miguecarp23@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
