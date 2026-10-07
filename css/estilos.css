@@ -737,3 +737,244 @@ header.navbar .header-logo {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================
+   ESTILOS: SOLICITUD DE RENTA (CORREGIDO)
+   ========================================== */
+
+/* Forzar la orientación vertical para evitar el choque con el main general */
+main.solicitud-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 20px 8% 40px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.solicitud-header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-volver {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.propiedad-titulo {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* Disposición de 2 columnas */
+.solicitud-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+    gap: 25px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Tarjeta Formulario (Izquierda) */
+.solicitud-card-form {
+    background-color: #232726;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solicitud-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group-renta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-renta label {
+    font-size: 0.85rem;
+    color: #dddddd;
+    font-weight: 500;
+}
+
+.form-group-renta input,
+.form-group-renta select,
+.form-group-renta textarea {
+    background-color: transparent;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+}
+
+.form-group-renta input:focus,
+.form-group-renta select:focus,
+.form-group-renta textarea:focus {
+    border-color: #55c79e;
+}
+
+.form-group-renta select option {
+    background-color: #232726;
+    color: #ffffff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Columna Derecha */
+.solicitud-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solicitud-card-sidebar {
+    background-color: #232726;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.sidebar-title {
+    display: block;
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.status-badge-box {
+    background-color: #3b3f3e;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 15px;
+}
+
+.status-text {
+    color: #f3aa2c;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.divider {
+    height: 1px;
+    background-color: #444444;
+    margin: 15px 0;
+}
+
+.sidebar-subtitle {
+    display: block;
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.monto-verde {
+    color: #55c79e;
+    font-weight: 600;
+}
+
+.resumen-bold {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.total-item {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.font-large {
+    font-size: 0.95rem;
+}
+
+/* Bloque INE */
+.ine-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-box {
+    background-color: #3b3f3e;
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.upload-box:hover {
+    background-color: #484c4b;
+}
+
+.upload-hint {
+    font-size: 0.8rem;
+    color: #cccccc;
+    margin-top: 12px;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    .solicitud-grid {
+        grid-template-columns: 1fr;
+    }
+}

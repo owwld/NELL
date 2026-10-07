@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Renta - NELL</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <!-- Navegación compartida (utiliza las clases ya creadas en tu CSS) -->
+    <header class="navbar">
+        <a href="#" class="header-logo">NELL<span class="dot">.</span></a>
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Perfil</a>
+            <a href="#">Historial</a>
+        </nav>
+        <a href="#" class="user-avatar">CM</a>
+    </header>
+
+    <!-- Contenido Principal de Solicitud de Renta -->
+    <main class="solicitud-container">
+        
+        <!-- Enlace superior de regreso -->
+        <div class="solicitud-header">
+            <a href="detallesVivienda.html" class="btn-volver">&lt; Solicitud de renta</a>
+        </div>
+
+        <!-- Título de la propiedad -->
+        <h1 class="propiedad-titulo">Casa moderna privada - Gran jardin</h1>
+
+        <!-- Cuadrícula de 2 columnas -->
+        <div class="solicitud-grid">
+            
+            <!-- Columna Izquierda: Formulario -->
+            <div class="solicitud-card-form">
+                <form class="solicitud-form">
+                    
+                    <div class="form-row-two">
+                        <div class="form-group-renta">
+                            <label for="fechaInicio">Fecha de Inicio</label>
+                            <input type="text" id="fechaInicio" value="01/08/2025">
+                        </div>
+                        <div class="form-group-renta">
+                            <label for="duracionEstimada">Duracion estimada</label>
+                            <select id="duracionEstimada">
+                                <option value="12">12 Meses</option>
+                                <option value="6">6 Meses</option>
+                                <option value="24">24 Meses</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group-renta">
+                        <label for="mensajeArrendador">Mensaje al arrendador</label>
+                        <textarea id="mensajeArrendador" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group-renta">
+                        <label for="documentosAdjuntos">Documentos adjuntos (Opcional)</label>
+                        <textarea id="documentosAdjuntos" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-outline">Enviar solicitud</button>
+                        <button type="button" class="btn-outline">Cancelar</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Columna Derecha: Estado, Resumen y Carga de INE -->
+            <div class="solicitud-sidebar">
+                
+                <!-- Tarjeta de Estado y Resumen -->
+                <div class="solicitud-card-sidebar">
+                    <span class="sidebar-title">Estado de Solicitud</span>
+                    
+                    <div class="status-badge-box">
+                        <span class="status-text">Pendiente</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <span class="sidebar-subtitle">Resumen</span>
+                    
+                    <div class="resumen-item">
+                        <span>Precio mensual</span>
+                        <span class="monto-verde">$10,000</span>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Deposito</span>
+                        <span class="monto-verde">$5,000</span>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Duracion</span>
+                        <span class="resumen-bold">12 meses</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="resumen-item total-item">
+                        <span>Total primer mes</span>
+                        <span class="monto-verde font-large">$15,000</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Carga INE -->
+                <div class="solicitud-card-sidebar ine-card">
+                    <span class="sidebar-title">INE</span>
+                    
+                    <div class="upload-box">
+                        <!-- Ícono de subida SVG -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <p class="upload-hint">Seleccione el archivo de su INE</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
