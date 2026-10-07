@@ -223,3 +223,222 @@ background-color: #55c79e;
         font-size: 2rem;
     }
 }
+
+/* =========================================
+   ESTILOS PARA LA PÁGINA: INICIO ESTUDIANTE
+   ========================================= */
+
+/* Fondo general de la página */
+body {
+    background-color: #171d1c;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- 1. Barra de Navegación --- */
+#menuPrincipal {
+    background-color: #141817;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #1f2625;
+}
+
+.header-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.dot {
+    color: #55c79e;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
+}
+
+.opcionMenuPrincipal {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.opcionMenuPrincipal.activo {
+    color: #55c79e;
+}
+
+.profile-icon {
+    background-color: #55c79e;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* --- 2. Sección del Buscador --- */
+.seccion-buscador {
+    padding: 30px 40px;
+    background-color: #171d1c;
+}
+
+.seccion-buscador h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.formulario-busqueda {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.campo.largo {
+    width: 250px;
+}
+
+.campo label {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    margin-bottom: 5px;
+}
+
+.campo input, 
+.campo select {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.btn-buscar {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+}
+
+/* --- 3. Cuadrícula de Tarjetas --- */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 15px;
+    padding: 0 40px 40px 40px;
+    justify-content: space-between; /* Espacia las tarjetas uniformemente */
+}
+
+.tarjeta {
+    background-color: #1c2322;
+    border-radius: 8px;
+    width: 19%; /* Toma exactamente una quinta parte del espacio */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.imagen-casa {
+    height: 140px;
+    position: relative;
+    background-color: #28302f; 
+}
+
+/* Hace que cualquier foto que pongas se recorte y llene el espacio sin deformarse */
+.imagen-casa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.etiqueta-precio {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #55c79e;
+    color: #000000;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.info-tarjeta {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que el contenido se expanda y empuje el botón abajo */
+}
+
+.info-tarjeta h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.info-tarjeta p {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.etiquetas-servicios {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.etiquetas-servicios span {
+    background-color: #2b3433;
+    color: #ffffff;
+    font-size: 0.6rem;
+    padding: 3px 9px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-detalles {
+    margin-top: auto; /* Empuja este botón siempre hasta el fondo */
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #cccccc;
+    border: 1px solid #444;
+    padding: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    transition: 0.3s;
+}
+
+.btn-detalles:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.campo select option {
+    color: #000000;
+    background-color: #ffffff;
+}

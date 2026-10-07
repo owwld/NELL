@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEll</title>
+    <title>NELL - Inicio Estudiante</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    
+
+    <!-- 1. Barra de Navegación -->
+    <nav id="menuPrincipal">
+        <div class="header-logo">NELL<span class="dot">.</span></div>
+        <div class="menu-links">
+            <a class="opcionMenuPrincipal activo" href="inicioEstudiante.html">Inicio</a>
+            <a class="opcionMenuPrincipal" href="#">Perfil</a>
+            <a class="opcionMenuPrincipal" href="#">Historial</a>
+        </div>
+        <div class="profile-icon">CM</div>
+    </nav>
+
+    <!-- 2. Sección del Buscador -->
+    <section class="seccion-buscador">
+        <h2>Encuentra tu hogar universitario</h2>
+        
+        <form class="formulario-busqueda">
+            <div class="campo largo">
+                <label>Buscar por universidad cerca</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label>Precio maximo</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label>Tipo de vivienda</label>
+                <select>
+                    <option></option>
+                    <option>Casa</option>
+                    <option>Departamento</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Genero</label>
+                <select>
+                    <option></option>
+                    <option color="#000000">Hombres</option>
+                    <option color="#000000">Mujeres</option>
+                    <option color="#000000">Mixto</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-buscar">🔍 Buscar</button>
+        </form>
+    </section>
+
+    <!-- 3. Cuadrícula de Tarjetas -->
+    <section class="contenedor-tarjetas">
+        
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta">
+            <div class="imagen-casa">
+                <!-- COLOCA TU FOTO AQUÍ -->
+                <img src="../imagenes/casa1.jpg" alt="Casa moderna">
+                <span class="etiqueta-precio">$10,000</span>
+            </div>
+            <div class="info-tarjeta">
+                <h3>Casa moderna privada</h3>
+                <p>Col. Gran Jardin</p>
+                <div class="etiquetas-servicios">
+                    <span>Wifi</span><span>parking</span>
+                    <span>Mascotas</span><span>A/C</span>
+                    <span>Amueblado</span>
+                </div>
+                <a href="#" class="btn-detalles">Ver más detalles</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <div class="imagen-casa">
+                <!-- COLOCA TU FOTO AQUÍ -->
+                <img src="../imagenes/depa1.jpg" alt="Departamento">
+                <span class="etiqueta-precio">$12,000</span>
+            </div>
+            <div class="info-tarjeta">
+                <h3>Departamento en 3er piso</h3>
+                <p> Col. Silao</p>
+                <div class="etiquetas-servicios">
+                    <span>Wifi</span><span>parking</span>
+                    <span>Mujer</span><span>A/C</span>
+                    <span>Amueblado</span>
+                </div>
+                <a href="#" class="btn-detalles">Ver más detalles</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta">
+            <div class="imagen-casa">
+                <!-- COLOCA TU FOTO AQUÍ -->
+                <img src="../imagenes/casa3.jpg" alt="Casa">
+                <span class="etiqueta-precio">$3,400</span>
+            </div>
+            <div class="info-tarjeta">
+                <h3>Casa</h3>
+                <p> Col. chapalita</p>
+                <div class="etiquetas-servicios">
+                    <span>Wifi</span><span>parking</span>
+                    <span>Mascotas</span><span>Terraza</span>
+                    <span>Amueblado</span>
+                </div>
+                <a href="#" class="btn-detalles">Ver más detalles</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta">
+            <div class="imagen-casa">
+                <!-- COLOCA TU FOTO AQUÍ -->
+                <img src="../imagenes/depa2.jpg" alt="Depa octavo piso">
+                <span class="etiqueta-precio">$18,000</span>
+            </div>
+            <div class="info-tarjeta">
+                <h3>Depa octavo piso</h3>
+                <p> Col. El molino residencial</p>
+                <div class="etiquetas-servicios">
+                    <span>Wifi</span><span>parking</span>
+                    <span>Balcon</span><span>A/C</span>
+                    <span>Amueblado</span>
+                </div>
+                <a href="#" class="btn-detalles">Ver más detalles</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="tarjeta">
+            <div class="imagen-casa">
+                <!-- COLOCA TU FOTO AQUÍ -->
+                <img src="../imagenes/casa3.jpg" alt="Casa centrica">
+                <span class="etiqueta-precio">$6,500</span>
+            </div>
+            <div class="info-tarjeta">
+                <h3>Casa centrica mediterranea</h3>
+                <p> Col. Centro</p>
+                <div class="etiquetas-servicios">
+                    <span>Wifi</span><span>Terraza</span>
+                    <span>Mascotas</span><span>A/C</span>
+                    <span>Amueblado</span>
+                </div>
+                <a href="#" class="btn-detalles">Ver más detalles</a>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>
