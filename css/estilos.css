@@ -978,3 +978,505 @@ main.solicitud-container {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================
+   1. RESET Y ESTILOS BASE
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181a1b;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   2. BARRA DE NAVEGACIÓN COMPARTIDA
+   ========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #181a1b;
+    border-bottom: 1px solid #2a2d2e;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-logo .dot {
+    color: #55c79e;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.user-avatar {
+    background-color: #55c79e;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   3. ESTILOS: DETALLES DE VIVIENDA
+   ========================================== */
+main.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 8% 40px 8%;
+    width: 100%;
+}
+
+.top-nav-bar {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Grid Principal (2 Columnas) */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* Tarjetas Base */
+.card {
+    background-color: #232726;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Galería */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 12px;
+}
+
+.thumb-box {
+    background-color: #2e3231;
+    border-radius: 12px;
+    height: 70px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Resumen Propiedad */
+.property-summary-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.location {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.price-tag {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #55c79e;
+    margin-bottom: 6px;
+}
+
+.deposit-info {
+    font-size: 0.85rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-primary-action,
+.btn-secondary-action,
+.btn-reviews {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary-action {
+    background-color: #55c79e;
+    color: #181a1b;
+}
+
+.btn-secondary-action,
+.btn-reviews {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.btn-reviews {
+    margin-top: 20px;
+}
+
+/* Amenidades */
+.description-card h3,
+.description-card h4,
+.landlord-card h3 {
+    margin-bottom: 12px;
+}
+
+.amenities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pill {
+    background-color: #313534;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #dddddd;
+}
+
+/* Arrendador */
+.landlord-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.landlord-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #404443;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.member-badge {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.contact-details p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-top: 6px;
+}
+
+
+/* ==========================================
+   4. ESTILOS: SOLICITUD DE RENTA
+   ========================================== */
+main.solicitud-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 8% 40px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.solicitud-header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-volver {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.propiedad-titulo {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.solicitud-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+    gap: 25px;
+    align-items: start;
+    width: 100%;
+}
+
+.solicitud-card-form {
+    background-color: #232726;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solicitud-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group-renta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-renta label {
+    font-size: 0.85rem;
+    color: #dddddd;
+}
+
+.form-group-renta input,
+.form-group-renta select,
+.form-group-renta textarea {
+    background-color: transparent;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+}
+
+.form-group-renta input:focus,
+.form-group-renta select:focus,
+.form-group-renta textarea:focus {
+    border-color: #55c79e;
+}
+
+.form-group-renta select option {
+    background-color: #232726;
+    color: #ffffff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-outline {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Columna Derecha Solicitud */
+.solicitud-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solicitud-card-sidebar {
+    background-color: #232726;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.sidebar-title, .sidebar-subtitle {
+    display: block;
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.status-badge-box {
+    background-color: #3b3f3e;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 15px;
+}
+
+.status-text {
+    color: #f3aa2c;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.divider {
+    height: 1px;
+    background-color: #444444;
+    margin: 15px 0;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.monto-verde {
+    color: #55c79e;
+    font-weight: 600;
+}
+
+.resumen-bold {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.ine-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-box {
+    background-color: #3b3f3e;
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.upload-hint {
+    font-size: 0.8rem;
+    color: #cccccc;
+    margin-top: 12px;
+}
+
+
+/* ==========================================
+   5. ADAPTACIÓN RESPONSIVA (CELULARES)
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* Ajustes generales del contenedor */
+    main.details-container,
+    main.solicitud-container {
+        padding: 15px 16px 30px 16px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Transformación de Grids a 1 sola columna vertical */
+    .details-grid,
+    .solicitud-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Adaptación de Detalles de Vivienda */
+    .main-image img {
+        height: 220px; /* Imagen de la casa ajustada a pantalla móvil */
+    }
+
+    .action-buttons {
+        gap: 10px;
+    }
+
+    /* Adaptación de Solicitud de Renta */
+    .form-row-two {
+        grid-template-columns: 1fr; /* Fecha y Duración pasan a estar uno abajo de otro */
+        gap: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column; /* Botones 'Enviar' y 'Cancelar' apilados */
+        gap: 12px;
+    }
