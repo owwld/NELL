@@ -1,4 +1,4 @@
-/* Importar fuente Montserrat */
+/* Importar fuente Montserrat para un estilo similar al diseño */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
@@ -155,17 +155,22 @@ main {
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
+background-color: #55c79e;
     color: #000;
     border: none;
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 30px;
     transition: opacity 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 .btn-primary:hover {
@@ -217,180 +222,4 @@ main {
     .hero h1 {
         font-size: 2rem;
     }
-}
-
-/* =========================================
-   ESTILOS Estudiantes Inicio
-   ========================================= */
-
-/* Menú superior adaptado */
-#menuPrincipal {
-    background-color: #181c1b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-}
-
-.menu-links {
-    display: flex;
-    gap: 40px;
-}
-
-.opcionMenuPrincipal {
-    color: #cccccc;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.opcionMenuPrincipal.activo {
-    color: #55c79e;
-}
-
-/* Buscador en fila */
-.seccion-buscador {
-    padding: 30px 40px;
-}
-
-.seccion-buscador h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.formulario-busqueda {
-    display: flex;
-    gap: 20px;
-    align-items: flex-end;
-}
-
-.campo {
-    display: flex;
-    flex-direction: column;
-    width: 180px;
-}
-
-.campo.largo {
-    width: 250px;
-}
-
-.campo label {
-    font-size: 0.75rem;
-    color: #aaaaaa;
-    margin-bottom: 5px;
-}
-
-.campo input, 
-.campo select {
-    background-color: transparent;
-    border: 1px solid #555;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 6px;
-    outline: none;
-}
-
-.btn-buscar {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #555;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    height: 40px;
-}
-
-/* Contenedor de las 5 tarjetas en fila exacta */
-.contenedor-tarjetas {
-    display: flex;
-    gap: 15px;
-    padding: 0 40px;
-    justify-content: space-between;
-}
-
-.tarjeta {
-    background-color: #1f2625;
-    border-radius: 8px;
-    width: 19%; /* Divide el espacio exacto para 5 tarjetas */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.imagen-casa {
-    height: 140px;
-    position: relative;
-}
-
-/* Configuración para que tus fotos cubran perfectamente el espacio */
-.imagen-casa img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.etiqueta-precio {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: #55c79e;
-    color: #000000;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 700;
-}
-
-.info-tarjeta {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.info-tarjeta h3 {
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.info-tarjeta p {
-    font-size: 0.75rem;
-    color: #888888;
-    margin-bottom: 15px;
-}
-
-.etiquetas-servicios {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.etiquetas-servicios span {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 0.6rem;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-weight: 600;
-}
-
-.btn-detalles {
-    margin-top: auto; /* Manda el botón siempre al fondo de la tarjeta */
-    display: block;
-    text-align: center;
-    background: transparent;
-    color: #cccccc;
-    border: 1px solid #555;
-    padding: 6px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.75rem;
-}
-
-.btn-detalles:hover {
-    border-color: #ffffff;
-    color: #ffffff;
 }
