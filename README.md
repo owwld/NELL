@@ -1,51 +1,70 @@
-# NELL – Nest Living León 0.1 🟢🏙️
-
-**Universidad Tecnológica de León** | Grupo: LDSM 406
-
-**Equipo de Desarrollo:**
-*   MARTINEZ MEJIA CHRISTIAN OSWALDO
-*   CARDENAZ OROZCO AARON
-*   ZARAGOZA ALVAREZ JUAN MANUEL
+# NELL – Nest Living León 0.1
+**Universidad Tecnológica de León** | **Grupo:** LDSM 406
 
 ---
 
-## Problemática y Justificación
+## 1. Problemática y Justificación
+
 Los estudiantes foráneos que llegan a León, Guanajuato, enfrentan dificultades para encontrar una vivienda que se adapte a su presupuesto, ubicación y necesidades debido a la información dispersa en redes sociales y sitios no especializados. Asimismo, los arrendadores carecen de una herramienta organizada para publicar sus propiedades y gestionar prospectos. 
 
 **NELL** se desarrolla como una plataforma web accesible que centraliza esta información, reduciendo el tiempo de búsqueda para los estudiantes y brindando a los arrendadores un sistema integral de administración de solicitudes.
 
-## Objetivo del Proyecto
-Diseñar una propuesta inicial de aplicación web que facilite a los estudiantes la búsqueda de viviendas en León, Gto., y permita a los arrendadores ofrecer sus propiedades de manera organizada, incorporando funciones de administración y moderación.
+---
 
-## Perfiles de Usuario
-*   **Estudiante:** Usuario principal que busca, filtra opciones, consulta detalles y envía solicitudes de renta.
-*   **Arrendador:** Propietario que registra, publica, administra viviendas y gestiona las solicitudes recibidas.
-*   **Administrador:** Encargado de supervisar el sistema general, gestionar cuentas de usuario y consultar registros.
-*   **Moderador:** Responsable de revisar el contenido publicado, atender reportes y mantener la plataforma libre de información inadecuada.
+## 2. Objetivo del Proyecto
 
-## Módulos del Sistema
-1.  **Acceso y registro:** Inicio de sesión y creación de cuentas con asignación de roles.
-2.  **Búsqueda y consulta de viviendas:** Filtros interactivos (precio, ubicación, características) y vista de detalles.
-3.  **Solicitudes de renta:** Envío, seguimiento y gestión (aceptar/rechazar) de solicitudes.
-4.  **Gestión de viviendas:** Panel para publicar, editar y administrar el catálogo de propiedades.
-5.  **Gestión del perfil:** Configuración de información personal según el tipo de cuenta.
+Diseñar una propuesta inicial de aplicación web que **facilite a los estudiantes la búsqueda de viviendas** en León, Gto., y permita a los **arrendadores ofrecer sus propiedades de manera organizada**, incorporando funciones de administración y moderación.
 
-## Tecnologías Utilizadas
-*   **Frontend:** HTML5 (Semántica) y CSS3 (Flexbox, CSS Variables, Diseño Responsivo).
-*   **Control de Versiones:** Git y GitHub.
-*   **Despliegue:** GitHub Pages.
-*   **Diseño UI/UX:** Prototipado centrado en usabilidad (RNF-01) y consistencia visual en Dark Mode (RNF-05).
+---
 
-## Instrucciones de Ejecución
-1.  Acceder al enlace oficial del despliegue en GitHub Pages: `https://owwld.github.io/NELL/html/index.html`
+## 3. Integrantes y Roles
 
-## Credenciales de Demostración (Prototipo Frontend)
-Dado que la plataforma se encuentra en fase de maquetación de prototipos (Pantallas 1 a 4), puedes navegar por la interfaz usando las funciones visuales de los botones.
-*   **Pantalla de Acceso (`index.html`):** Haz clic en "Iniciar sesion" para ser redirigido al flujo principal.
-*   **Pantalla Principal (`inicioEstudiante.html`):** Contiene el motor de búsqueda (Módulo 2) y la visualización del catálogo.
+A continuación se definen los roles del equipo, sus responsabilidades y las evidencias de trabajo de cada integrante:
 
-## Declaración de Uso de IA
-Para el desarrollo de la interfaz de este proyecto se utilizaron herramientas de Inteligencia Artificial (Google Gemini) como asistencia técnica para:
-*   Depuración de sintaxis CSS3 y estructuración de Flexbox.
-*   Resolución de conflictos de diseño en elementos de formularios anidados.
-*   Estructuración de este documento de documentación técnica.
+*Nota: Equipo conformado por MARTINEZ MEJIA CHRISTIAN OSWALDO, CARDENAZ OROZCO AARON y ZARAGOZA ALVAREZ JUAN MANUEL.*
+
+| Rol   | Miembro Asignado | Responsabilidades principales |
+| :--- | :--- | :--- | :--- |
+| **1. Coordinador y gestor del repositorio** | *[ MARTINEZ MEJIA CHRISTIAN OSWALDO]* | Organiza el tablero de tareas y las reuniones breves, administra ramas y pull requests, verifica el cumplimiento del cronograma e integra la versión final en `main`. 
+
+| **2. Diseñador UX/UI** | *[MARTINEZ MEJIA CHRISTIAN OSWALDO ]* | Define la guía de estilo y los wireframes, cuida la consistencia visual y la jerarquía, y desarrolla `css/estilos.css` y los componentes compartidos. 
+
+Desarrollador Front-End EN COLABORACION DE EL EQUIPO MARTINEZ MEJIA CRHISTIAN OSWALDO, ZARAGOZA ALVAREZ JUAN MANUEL Y CARDENAS OROZCO AARON
+---
+
+## 4. Módulos del Sistema
+
+1. **Acceso y registro:** Inicio de sesión y creación de cuentas con asignación de roles.
+2. **Búsqueda y consulta de viviendas:** Filtros interactivos (precio, ubicación, características) y vista de detalles.
+3. **Solicitudes de renta:** Envío, seguimiento y gestión (aceptar/rechazar) de solicitudes.
+4. **Gestión de viviendas:** Panel para publicar, editar y administrar el catálogo de propiedades.
+5. **Gestión del perfil:** Configuración de información personal según el tipo de cuenta.
+   ***SOLO VISTA NADA PROGRAMADO POR NECESIDAD DE UNA BASE DE DATOS***
+
+---
+## 5. Tecnologías Utilizadas
+
+* **Frontend:** HTML5 (Semántica) y CSS3 (Flexbox, CSS Variables, Diseño Responsivo).
+* **Control de Versiones:** Git y GitHub.
+* **Despliegue:** GitHub Pages.
+* **Diseño UI/UX:** Prototipado centrado en usabilidad y consistencia visual en Dark Mode.
+
+---
+
+## 6. Instrucciones de Ejecución
+
+**Opción A: Visualización en línea (Recomendada)**
+Acceder al enlace oficial del despliegue en GitHub Pages: 
+> https://owwld.github.io/NELL/html/index.html
+
+## 7. Declaración de Uso de IA
+
+Para el desarrollo de la interfaz y documentación de este proyecto, se utilizó la herramienta de Inteligencia Artificial *Google Gemini* como asistente técnico colaborativo. El apoyo consistió específicamente en:
+
+* **Estructuración de Navegación HTML:** Adaptación de etiquetas `<button>` a enlaces `<a>` para permitir la navegación directa entre vistas locales (como el paso del Login al Dashboard) sin necesidad de usar JavaScript.
+* **Depuración de CSS3:** 
+  * Solución de errores de visualización en los menús desplegables (`<select>`), forzando el contraste de texto negro sobre fondo blanco para solucionar la herencia del "Dark Mode".
+  * Corrección de estilos de botones para que los enlaces mantuvieran el formato de bloque, ancho completo y sin subrayado.
+  * Implementación de una arquitectura de nombres de clases con prefijos (ej. `.inicio-`) para encapsular los estilos y evitar choques entre el CSS del Login y el Dashboard.
+* **Soporte en Control de Versiones:** Asesoría con comandos de Git (como `git pull`) para la integración del código del equipo y guía paso a paso para el despliegue del repositorio en GitHub Pages.
+* **Documentación:** Apoyo en la redacción, formato Markdown y estructuración de este archivo `README.md`
